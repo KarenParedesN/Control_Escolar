@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CRUD Calificaciones</title>
+   
+</head>
+<body>
+
+    <h1>CRUD de calificaciones parciales y finales</h1>
+    <table border="1" cellpadding="5">
+        <thead>
+            <tr>
+                <th>Alumno</th>
+                <th>Parcial 1</th>
+                <th>Parcial 2</th>
+                <th>Parcial 3</th>
+                <th>Calificación Final</th>
+                <th class="actions-column">Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Alejandra Vásquez Ochoa</td>
+                <td>7.8</td>
+                <td>9.2</td>
+                <td>8.5</td>
+                <td>8.8</td>
+                <td class="action-icons">
+                  
+                    <a href="#" title="Editar">
+                        <svg viewBox="0 0 24 24"><path d="M3 17.25V21h3.75l11.02-11.02-3.75-3.75L3 17.25zM20.71 7.04a1.003 1.003 0 0 0 0-1.42l-2.34-2.34a1.003 1.003 0 0 0-1.42 0l-1.83 1.83 3.75 3.75 1.84-1.82z"/></svg>
+                    </a>
+            
+                    <a href="#" title="Eliminar" onclick="return confirm('¿Seguro que quieres eliminar?');">
+                        <svg viewBox="0 0 24 24"><path d="M16 9v10H8V9h8m-1.5-6h-5l-1 1H5v2h14V4h-4.5l-1-1z"/></svg>
+                    </a>
+                   
+                    <a href="#" title="Agregar">
+                        <svg viewBox="0 0 24 24"><path d="M19 11h-6V5h-2v6H5v2h6v6h2v-6h6v-2z"/></svg>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>Juan Carlos Pérez</td>
+                <td>8.3</td>
+                <td>7.9</td>
+                <td>9.1</td>
+                <td>8.4</td>
+                <td class="action-icons">
+                    <a href="#" title="Editar">
+                        <svg viewBox="0 0 24 24"><path d="M3 17.25V21h3.75l11.02-11.02-3.75-3.75L3 17.25zM20.71 7.04a1.003 1.003 0 0 0 0-1.42l-2.34-2.34a1.003 1.003 0 0 0-1.42 0l-1.83 1.83 3.75 3.75 1.84-1.82z"/></svg>
+                    </a>
+                    <a href="#" title="Eliminar" onclick="return confirm('¿Seguro que quieres eliminar?');">
+                        <svg viewBox="0 0 24 24"><path d="M16 9v10H8V9h8m-1.5-6h-5l-1 1H5v2h14V4h-4.5l-1-1z"/></svg>
+                    </a>
+                    <a href="#" title="Agregar">
+                        <svg viewBox="0 0 24 24"><path d="M19 11h-6V5h-2v6H5v2h6v6h2v-6h6v-2z"/></svg>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>María Fernanda Ruiz</td>
+                <td>9.0</td>
+                <td>8.8</td>
+                <td>7.6</td>
+                <td>8.5</td>
+                <td class="action-icons">
+                    <a href="#" title="Editar">
+                        <svg viewBox="0 0 24 24"><path d="M3 17.25V21h3.75l11.02-11.02-3.75-3.75L3 17.25zM20.71 7.04a1.003 1.003 0 0 0 0-1.42l-2.34-2.34a1.003 1.003 0 0 0-1.42 0l-1.83 1.83 3.75 3.75 1.84-1.82z"/></svg>
+                    </a>
+                    <a href="#" title="Eliminar" onclick="return confirm('¿Seguro que quieres eliminar?');">
+                        <svg viewBox="0 0 24 24"><path d="M16 9v10H8V9h8m-1.5-6h-5l-1 1H5v2h14V4h-4.5l-1-1z"/></svg>
+                    </a>
+                    <a href="#" title="Agregar">
+                        <svg viewBox="0 0 24 24"><path d="M19 11h-6V5h-2v6H5v2h6v6h2v-6h6v-2z"/></svg>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>Luis Alberto Torres</td>
+                <td>7.2</td>
+                <td>9.5</td>
+                <td>8.9</td>
+                <td>8.7</td>
+                <td class="action-icons">
+                    <a href="#" title="Editar">
+                        <svg viewBox="0 0 24 24"><path d="M3 17.25V21h3.75l11.02-11.02-3.75-3.75L3 17.25zM20.71 7.04a1.003 1.003 0 0 0 0-1.42l-2.34-2.34a1.003 1.003 0 0 0-1.42 0l-1.83 1.83 3.75 3.75 1.84-1.82z"/></svg>
+                    </a>
+                    <a href="#" title="Eliminar" onclick="return confirm('¿Seguro que quieres eliminar?');">
+                        <svg viewBox="0 0 24 24"><path d="M16 9v10H8V9h8m-1.5-6h-5l-1 1H5v2h14V4h-4.5l-1-1z"/></svg>
+                    </a>
+                    <a href="#" title="Agregar">
+                        <svg viewBox="0 0 24 24"><path d="M19 11h-6V5h-2v6H5v2h6v6h2v-6h6v-2z"/></svg>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>Daniela Gómez López</td>
+                <td>8.4</td>
+                <td>8.0</td>
+                <td>8.3</td>
+                <td>8.2</td>
+                <td class="action-icons">
+                    <a href="#" title="Editar">
+                        <svg viewBox="0 0 24 24"><path d="M3 17.25V21h3.75l11.02-11.02-3.75-3.75L3 17.25zM20.71 7.04a1.003 1.003 0 0 0 0-1.42l-2.34-2.34a1.003 1.003 0 0 0-1.42 0l-1.83 1.83 3.75 3.75 1.84-1.82z"/></svg>
+                    </a>
+                    <a href="#" title="Eliminar" onclick="return confirm('¿Seguro que quieres eliminar?');">
+                        <svg viewBox="0 0 24 24"><path d="M16 9v10H8V9h8m-1.5-6h-5l-1 1H5v2h14V4h-4.5l-1-1z"/></svg>
+                    </a>
+                    <a href="#" title="Agregar">
+                        <svg viewBox="0 0 24 24"><path d="M19 11h-6V5h-2v6H5v2h6v6h2v-6h6v-2z"/></svg>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>Carlos Enrique Ramírez</td>
+                <td>8.8</td>
+                <td>8.5</td>
+                <td>9.0</td>
+                <td>8.9</td>
+                <td class="action-icons">
+                    <a href="#" title="Editar">
+                        <svg viewBox="0 0 24 24"><path d="M3 17.25V21h3.75l11.02-11.02-3.75-3.75L3 17.25zM20.71 7.04a1.003 1.003 0 0 0 0-1.42l-2.34-2.34a1.003 1.003 0 0 0-1.42 0l-1.83 1.83 3.75 3.75 1.84-1.82z"/></svg>
+                    </a>
+                    <a href="#" title="Eliminar" onclick="return confirm('¿Seguro que quieres eliminar?');">
+                        <svg viewBox="0 0 24 24"><path d="M16 9v10H8V9h8m-1.5-6h-5l-1 1H5v2h14V4h-4.5l-1-1z"/></svg>
+                    </a>
+                    <a href="#" title="Agregar">
+                        <svg viewBox="0 0 24 24"><path d="M19 11h-6V5h-2v6H5v2h6v6h2v-6h6v-2z"/></svg>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>Sofía Mendoza Castillo</td>
+                <td>7.9</td>
+                <td>8.7</td>
+                <td>8.1</td>
+                <td>8.4</td>
+                <td class="action-icons">
+                    <a href="#" title="Editar">
+                        <svg viewBox="0 0 24 24"><path d="M3 17.25V21h3.75l11.02-11.02-3.75-3.75L3 17.25zM20.71 7.04a1.003 1.003 0 0 0 0-1.42l-2.34-2.34a1.003 1.003 0 0 0-1.42 0l-1.83 1.83 3.75 3.75 1.84-1.82z"/></svg>
+                    </a>
+                    <a href="#" title="Eliminar" onclick="return confirm('¿Seguro que quieres eliminar?');">
+                        <svg viewBox="0 0 24 24"><path d="M16 9v10H8V9h8m-1.5-6h-5l-1 1H5v2h14V4h-4.5l-1-1z"/></svg>
+                    </a>
+                    <a href="#" title="Agregar">
+                        <svg viewBox="0 0 24 24"><path d="M19 11h-6V5h-2v6H5v2h6v6h2v-6h6v-2z"/></svg>
+                    </a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
