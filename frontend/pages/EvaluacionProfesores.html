@@ -1,1 +1,34 @@
-html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluación de Profesores</title>
+</head>
+<body>
+    <h1>Evaluación de Profesores</h1>
+    <nav>
+        <ul>
+            <li><a href="/frontend/pages/directorHome.html">Inicio</a></li>
+            <li><a href="/frontend/pages/CRUDcarreras.html">Gestión de Carreras</a></li>
+            <li><a href="/frontend/pages/CRUDPlanesEstudio.html">Gestión de Planes de Estudio</a></li>
+            <li><a href="/frontend/pages/CRUDPostgrados.html">Gestión de Postgrados</a></li>
+            <li><a href="/frontend/pages/CRUDprofesores.html">Gestión de Profesores</a></li>
+            <li><a href="/frontend/pages/EvaluacionProfesores.html">Evaluación de Profesores</a></li>
+        </ul>
+    </nav>
+
+    <form id="evaluationForm">
+        <label for="professorName">Nombre del Profesor:</label>
+        <input type="text" id="professorName" name="professorName" required>
+
+        <label for="courseName">Nombre del Curso:</label>
+        <input type="text" id="courseName" name="courseName" required>
+
+        <label for="evaluationScore">Puntuación de Evaluación (1-5):</label>
+        <input type="number" id="evaluationScore" name="evaluationScore" min="1" max="5" required>
+
+        <button type="submit">Enviar Evaluación</button>
+    </form>
+</body>
+</html>
