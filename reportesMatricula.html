@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reportes de Bajas y Deserciones</title>
+    <link rel="stylesheet" href="reportesMatricula.css"> <!-- Enlace a tu archivo CSS -->
+</head>
+<body>
+    <header>
+        <h1>Reportes de Bajas y Deserciones</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Filtrar Reportes</h2>
+            <form action="#" method="GET">
+                <label for="fecha-inicio">Fecha Inicio:</label>
+                <input type="date" id="fecha-inicio" name="fecha-inicio" required>
+               
+                <label for="fecha-fin">Fecha Fin:</label>
+                <input type="date" id="fecha-fin" name="fecha-fin" required>
+               
+                <label for="carrera">Carrera:</label>
+                <select id="carrera" name="carrera">
+                    <option value="">Todas</option>
+                    <option value="licenciatura">Licenciatura</option>
+                    <option value="maestria">Maestría</option>
+                </select>
+               
+                <button type="submit">Filtrar</button>
+            </form>
+        </section>
+        <section>
+            <h2>Resultados</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Matrícula</th>
+                        <th>Carrera</th>
+                        <th>Fecha de Baja</th>
+                        <th>Motivo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Juan Pérez</td>
+                        <td>2025001</td>
+                        <td>Licenciatura en Administración</td>
+                        <td>2025-06-01</td>
+                        <td>Problemas económicos</td>
+                    </tr>
+                    <tr>
+                        <td>María López</td>
+                        <td>2025002</td>
+                        <td>Maestría en Educación</td>
+                        <td>2025-05-15</td>
+                        <td>Motivos personales</td>
+                    </tr>
+                    <!-- Más filas dinámicas aquí -->
+                </tbody>
+            </table>
+            <button onclick="exportarReporte()">Exportar a Excel</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Control Escolar</p>
+    </footer>
+    <script>
+        function exportarReporte() {
+            alert("Función para exportar el reporte a Excel aún no implementada.");
+        }
+    </script>
+</body>
+</html>
+ 

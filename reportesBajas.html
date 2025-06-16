@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reportes de Matrícula</title>
+    <link rel="stylesheet" href="reportesBajas.css"> <!-- Enlace a tu archivo CSS -->
+</head>
+<body>
+    <header>
+        <h1>Reportes de Matrícula</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Filtrar Reportes</h2>
+            <form action="#" method="GET">
+                <label for="fecha-inicio">Fecha Inicio:</label>
+                <input type="date" id="fecha-inicio" name="fecha-inicio" required>
+               
+                <label for="fecha-fin">Fecha Fin:</label>
+                <input type="date" id="fecha-fin" name="fecha-fin" required>
+               
+                <label for="nivel-academico">Nivel Académico:</label>
+                <select id="nivel-academico" name="nivel-academico">
+                    <option value="">Todos</option>
+                    <option value="licenciatura">Licenciatura</option>
+                    <option value="maestria">Maestría</option>
+                </select>
+               
+                <button type="submit">Filtrar</button>
+            </form>
+        </section>
+        <section>
+            <h2>Resultados</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Matrícula</th>
+                        <th>Carrera</th>
+                        <th>Nivel Académico</th>
+                        <th>Fecha de Inscripción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Pedro Gómez</td>
+                        <td>2025003</td>
+                        <td>Licenciatura en Contaduría</td>
+                        <td>Licenciatura</td>
+                        <td>2025-01-15</td>
+                    </tr>
+                    <tr>
+                        <td>Laura Martínez</td>
+                        <td>2025004</td>
+                        <td>Maestría en Finanzas</td>
+                        <td>Maestría</td>
+                        <td>2025-02-10</td>
+                    </tr>
+                    <!-- Más filas dinámicas aquí -->
+                </tbody>
+            </table>
+            <button onclick="exportarReporte()">Exportar a Excel</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Control Escolar</p>
+    </footer>
+    <script>
+        function exportarReporte() {
+            alert("Función para exportar el reporte a Excel aún no implementada.");
+        }
+    </script>
+</body>
+</html>
